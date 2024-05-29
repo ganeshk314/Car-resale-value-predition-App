@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict your Car"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondary"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp" />
+
+
+        <!--AB Test -->
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:id="@+id/abtest_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB Test"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_alignBaseline="@id/abtest"/>
+
+        <Spinner
+            android:id="@+id/abtest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/abtest_label"
+            android:layout_marginTop="5dp"/>
+
+
+        <!-- Vehicle Type -->
+        <TextView
+            android:id="@+id/vehicle_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/vechileType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/vehicle_type_label" />
+
+        <!-- Year of Registration -->
+        <TextView
+            android:id="@+id/year_of_registration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year of Registration"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/Yor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Year of Registration"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_style"
+            android:layout_below="@id/year_of_registration_label" />
+
+        <!-- Gearbox -->
+        <TextView
+            android:id="@+id/gearbox_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gearbox"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/gearbox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/gearbox_label" />
+
+        <!-- Power PS -->
+        <TextView
+            android:id="@+id/power_ps_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power PS"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/PowerPs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Power PS"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_style"
+            android:layout_below="@id/power_ps_label" />
+
+        <!-- Model -->
+        <TextView
+            android:id="@+id/model_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/model_label" />
+
+        <!-- Kilometer -->
+        <TextView
+            android:id="@+id/kilometer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilometer"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/kilometer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Kilometer"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_style"
+            android:layout_below="@id/kilometer_label" />
+
+        <!-- Month of Registration -->
+        <TextView
+            android:id="@+id/month_of_registration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month of Registration"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/monthOfRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Month of Registration"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_style"
+            android:layout_below="@id/month_of_registration_label" />
+
+        <!-- Fuel Type -->
+        <TextView
+            android:id="@+id/fuel_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Type"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/fuelType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/fuel_type_label" />
+
+        <!-- Brand -->
+        <TextView
+            android:id="@+id/brand_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/brand_label" />
+
+        <!-- Not Repaired Damage -->
+        <TextView
+            android:id="@+id/not_repaired_damage_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Repaired Damage"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/notRepairedDamage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/not_repaired_damage_label" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Predict"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:id="@+id/predict" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/result" />
+    </LinearLayout>
+
+</ScrollView>

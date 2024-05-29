@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="294dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Resale Value Prediction"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="45sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ever wished you could see into the future of your car's worth? Now you can! Our system crunches a bunch of numbers about your car, like how many miles it's driven, its maintenance history, and what similar cars are selling for. Then, it uses all that info to give you a pretty good guess about what your car might be worth when you're ready to sell it"
+        android:justificationMode="inter_word"
+        android:padding="16sp"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        />
+
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="45sp"
+        android:textStyle="bold"
+        android:text="Get Started"
+        android:background="@drawable/button_style" />
+
+</LinearLayout>
